@@ -1,0 +1,14 @@
+; SICP 2.23
+; for-each takes a procedure and a list of elements
+; and applies the procedure to each element in turn.
+; NB: it does not form a list of the results.
+
+(define (for-each f x)
+  (f x)
+  (for-each (cdr x)))
+
+; test from page 146
+(for-each (lambda (x)
+            (newline)
+            (display x))
+          (list 57 321 88))

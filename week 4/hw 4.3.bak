@@ -1,0 +1,4 @@
+; HW 4.3
+; Substitute 2
+; Takes: list, list of old words, list of new words. (old & new word lists should be same length)
+; Returns: copy of first argument list, but with each word that occurs in the second argument, replaced by the corresponding word of the third argument.

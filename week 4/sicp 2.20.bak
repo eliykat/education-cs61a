@@ -1,0 +1,15 @@
+;SICP 2.20
+;same-parity takes an arbitrary number of integers as arguments
+; and returns a list of all the arguments that have the same even-odd parity as the first argument.
+(define (same-parity . args)
+  (let ( (first-item (car args))
+         (second-item (car (cdr args)))
+         (rest-of-list (cdr (cdr args)))
+         (parity? (lambda (a b)
+                    (= (even? a) (even? b)))))
+    (cond ( (empty? (cdr args))
+            args)
+          ( (parity? first-item second-item)
+            (append (list first-item second-item) (same-parity rest-of-list)))
+          ( else
+            (cons first-item (same-parity rest-of-list))))))
