@@ -1,0 +1,36 @@
+; SICP 2.29
+
+; Procedures supplied by text:
+(define (make-mobile left right)
+  (list left right))
+
+(define (make-branch length structure)
+  (list length structure))
+
+; a. Write the corresponding selectors left-branch and right-branch, which return the branches of a mobile
+(define (left-branch mobile)
+  (car mobile))
+
+(define (right-branch mobile)
+  (cadr mobile))
+
+; branch-length and branch-structure, which return the components of a branch
+(define (branch-length branch)
+  (car branch))
+
+(define (branch-structure branch)
+  (cadr branch))
+
+; b. Using your selectors, define a procedure total-weight that returns the total weight of a mobile
+(define (total-weight mobile)
+  (let ((left-structure (branch-structure (left-branch mobile)))
+        (right-structure (branch-structure (right-branch mobile))))
+    (+
+     (if (pair? (left-structure))
+         (total-weight left-structure)
+         left-structure)
+     (if (pair? (right-structure))
+         (total-weight right-structure)
+         right-structure))))
+       
+       

@@ -1,0 +1,28 @@
+; SICP 2.30
+; square-tree takes a tree (deep list) and returns a tree of the same structure
+; with all leaf nodes squared.
+
+; define using map
+(define (square-tree-1 tree)
+  (map (lambda (sub-tree)
+         (if (pair? sub-tree)
+             (square-tree-1 sub-tree)
+             (* sub-tree sub-tree)))
+       tree))
+
+; define without using map
+(define (square-tree-2 tree)
+  (cons (if (pair? (car tree))
+            (square-tree-2 (car tree))
+            (* (car tree) (car tree)))
+        (if (null? cadr tree)
+            null
+            (square-tree-2 (cadr tree)))))
+
+; unit test from text
+(define test-tree (list 1
+                        (list 2 (list 3 4) 5)
+                        (list 6 7)))
+
+(square-tree-1 test-tree)
+(square-tree-2 test-tree)

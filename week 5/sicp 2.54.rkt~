@@ -1,0 +1,14 @@
+; SICP 2.54
+
+(define (equal? lista listb)
+  (cond ((null? lista)
+         #t)
+        ((and (list? (car lista)) (list? (car listb)))
+         (equal? (car lista) (car listb)))
+        (else
+         (and (eq? (car lista) (car listb))
+              (equal? (cdr lista) (cdr listb))))))
+
+(equal? '(this (is a) list) '(this (is a ) list))
+(equal? '(this is a list) '(this (is a) list))
+(equal? '(this (is a) list) '(this is a list))
