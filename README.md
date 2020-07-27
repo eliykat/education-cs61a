@@ -1,4 +1,6 @@
-This repo is to record my progress on Berkeley's cs61a (Spring 2011) course.
+This repo is to record my progress on Berkeley's cs61a (Spring 2011) course, which is structured around the book [The Structure and Interpretation of Computer Programs](https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs), aka the Wizard Book.
+
+The course focuses on teaching the fundamental principles of computer programming rather than the syntax of a particular language or the tools in a particular stack. Per Wikipedia, it covers principles such as recursion, abstraction, modularity, and programming design and implementation.
 
 A few notes for anyone reading this:
 
@@ -13,4 +15,3 @@ Resources for anyone playing at home:
 + [Lectures](https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E?sort=titleSorter)
 + [Course Materials](https://inst.eecs.berkeley.edu/~cs61a/sp11/)
 + SICP is freely available online via Google. (I recommend the PDF format.)
-
