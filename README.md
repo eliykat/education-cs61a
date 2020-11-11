@@ -2,6 +2,8 @@ This repo is to record my progress on Berkeley's cs61a (Spring 2011) course, whi
 
 The course focuses on teaching the fundamental principles of computer programming rather than the syntax of a particular language or the tools in a particular stack. Per Wikipedia, it covers principles such as recursion, abstraction, modularity, and programming design and implementation.
 
+I paused working on this about mid-2020 in favour of working on open source projects, but intend to return to it. It's a little like having your brain forcibly expanded.
+
 A few notes for anyone reading this:
 
 + This is entirely a personal project, but I have made it public in case it helps anyone else.
