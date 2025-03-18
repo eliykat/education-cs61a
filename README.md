@@ -15,5 +15,5 @@ Resources for anyone playing at home:
 
 + This course was recommended by [Teach Yourself Computer Science](https://teachyourselfcs.com).
 + [Lectures](https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E?sort=titleSorter)
-+ [Course Materials](https://inst.eecs.berkeley.edu/~cs61a/sp11/) [archived here](https://github.com/eliykat/berkeley_cs61a_spring-2011_archive)
++ [Course Materials](https://inst.eecs.berkeley.edu/~cs61a/sp11/) ([archived here](https://github.com/eliykat/berkeley_cs61a_spring-2011_archive))
 + SICP is freely available online via Google. (I recommend the PDF format.)
